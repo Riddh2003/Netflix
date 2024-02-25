@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Project</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    body{
+        background-image: linear-gradient(rgba(253, 135, 196, 0.1),rgba(205,135,196,0.1)),url('https://img.helpnetsecurity.com/wp-content/uploads/2020/03/23143409/netflix-collection.jpg');
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .netflix{
+        display: flex;
+        align-items: center;
+        justify-content: first baseline;
+        /* border: 1px solid white; */
+        color: rgb(255,0,106);
+        width: 72rem;
+        height: 8rem;
+        margin-bottom: 6%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .netflix h1{
+        font-size: 52px;
+    }
+    .netflix h2{
+        font-size: 48px;
+        margin-bottom: 4px;
+    }
+    .netflix .e{
+        font-size: 46px;
+        margin-bottom: 4px;
+    }
+    .netflix h3{
+        font-size: 45px;
+        margin-bottom: 6px;
+    }
+    .netflix .t{
+        font-size: 46px;
+        margin-bottom: 4px;
+    }
+    .netflix h4{
+        font-size: 43px;
+        margin-bottom: 7px;
+    }
+    .from {
+        /* position: relative; */
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        width: 40%;
+        height: 70vh;
+        padding: 20px 0;
+    }
+    .from:hover{
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.300);
+    }
+    .signin{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .signin h1{
+        width: 85%;
+        font-size: 3rem;
+        font-weight: 600;
+        justify-self: first baseline;
+        background: linear-gradient(to right,rgb(255,0,106),white);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        margin: 20px 0;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .tx1,
+    .tx2 {
+        border: 0;
+        width: 80%;
+        height: 30px;
+        border-radius: 5px;
+        margin : 10px 0;
+        background-color: rgba(128, 128, 128, 0.597);
+        cursor: text;
+        color: white;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    .signup{
+        border-radius: 5px;
+        background: rgba(255, 0, 106, 0.7);
+        border: 0;
+        width: 80%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 10%;
+        cursor: pointer;
+    }
+    .signup button{
+        font-size: 25px;
+        color: white;
+        font-weight: 600;
+        background: transparent;
+        border: 0;
+    }
+    .signup:hover{
+        box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.600),0px 0px 5px rgba(255, 0, 0, 0.600),0px 0px 5px rgba(255, 0, 0, 0.600),0px 0px 5px rgba(255, 0, 0, 0.600);
+    }
+    .box{
+        display: flex;
+        width: 85%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: 15px;
+        color: white;
+    }
+    .check{
+        display: flex;
+        align-items: center;
+        justify-content: first baseline;
+        width: 40%;
+        margin-left: 2px;
+    }
+    .check p{
+        margin-left: 3px;
+    }
+    .need{
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="netflix">
+                <h1>N</h1>
+                <h2 class="e">E</h2>
+                <h3 class="t">T</h3>
+                <h4>F</h4>
+                <h3>L</h3>
+                <h2>I</h2>
+                <h1>X</h1>
+            </div>
+        </nav>
+        <div class="from">
+            <div class="signin">
+                <h1>Sign In</h1>
+                <div class="input">
+                    <input  type=" email" placeholder=" Enter Email / Username" name="Email" class="tx1"></input>
+                    <input type="password" placeholder=" Enter Password" name="Password" class="tx2">
+                </div>
+            </div>
+            <div class="signup">
+                <button>Sign Up</button>
+            </div>
+            <div class="box">
+                <div class="check">
+                    <input type="checkbox" name="checkbox">
+                    <p id="re">Remember Me</p>
+                </div>
+                <div class="need">
+                    <p>Need Help?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
