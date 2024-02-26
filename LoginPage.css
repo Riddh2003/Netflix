@@ -4,7 +4,7 @@
     box-sizing: 0;
 }
 .container{
-    background-image: linear-gradient(rgba(253, 135, 196, 0.1),rgba(205,135,196,0.1)),url('https://img.helpnetsecurity.com/wp-content/uploads/2020/03/23143409/netflix-collection.jpg');
+    background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0,0.5)),url('https://img.helpnetsecurity.com/wp-content/uploads/2020/03/23143409/netflix-collection.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -115,7 +115,33 @@
 .need{
     cursor: pointer;
 }
-
+.footer{
+    padding: 50px 15% 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #aaaaaa;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
 /* ----------for small screen devices---------------- */
 @media only screen and (max-width : 700px){
     .from{
@@ -147,5 +173,21 @@
     }
     .box{
         font-size: 10px;
+    }
+    .footer{
+        padding: 25px 15% 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer h2{
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .footer .row a{
+        font-size: 10px;
+    }
+    .footer .row{
+        flex-direction: column;
     }
 }
